@@ -1,6 +1,6 @@
 .milestones {
   padding: 5rem 1rem;
-  background: white;
+  background: transparent;
 }
 
 .milestones-grid {
@@ -10,13 +10,14 @@
 }
 
 .milestone-card {
-  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+  background: rgba(30, 39, 82, 0.6);
   padding: 2.5rem;
   border-radius: 15px;
   transition: all 0.3s ease;
   border-left: 5px solid #667eea;
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(10px);
 }
 
 .milestone-card::before {
@@ -44,19 +45,19 @@
 .milestone-card h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: #ffffff;
   font-weight: 700;
 }
 
 .milestone-description {
-  color: #666;
+  color: #b0b0b0;
   margin-bottom: 1rem;
   line-height: 1.6;
   font-weight: 500;
 }
 
 .milestone-impact {
-  color: #999;
+  color: #9090a0;
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
@@ -68,7 +69,7 @@
   gap: 1rem;
   margin-bottom: 1.5rem;
   padding: 1.5rem;
-  background: white;
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 

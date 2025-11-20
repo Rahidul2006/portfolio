@@ -108,7 +108,7 @@ section {
 /* Print Styles */
 @media print {
   body {
-    background: white;
+    background:linear-gradient(135deg, #1e2752 0%, #000000 100%);
     color: black;
   }
 

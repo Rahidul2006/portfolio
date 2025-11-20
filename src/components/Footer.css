@@ -1,8 +1,9 @@
 .footer {
-  background: #333;
+  background: rgba(10, 14, 26, 0.8);
   color: white;
   padding: 2rem 1rem;
   text-align: center;
+  border-top: 1px solid rgba(102, 126, 234, 0.2);
 }
 
 .footer-content {

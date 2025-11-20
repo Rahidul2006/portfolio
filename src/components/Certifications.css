@@ -1,6 +1,6 @@
 .certifications {
   padding: 5rem 1rem;
-  background: #f8f9fa;
+  background: transparent;
 }
 
 .certifications-grid {
@@ -10,13 +10,14 @@
 }
 
 .certification-card {
-  background: white;
+  background: rgba(30, 39, 82, 0.6);
   padding: 2rem;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   position: relative;
   border-top: 4px solid #667eea;
+  backdrop-filter: blur(10px);
 }
 
 .certification-card:hover {
@@ -40,7 +41,7 @@
 
 .certification-card h3 {
   font-size: 1.2rem;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 0.8rem;
   font-weight: 700;
   line-height: 1.5;
@@ -53,14 +54,14 @@
 }
 
 .cert-description {
-  color: #666;
+  color: #b0b0b0;
   line-height: 1.6;
   margin-bottom: 1rem;
   font-size: 0.95rem;
 }
 
 .cert-date {
-  color: #999;
+  color: #9090a0;
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }

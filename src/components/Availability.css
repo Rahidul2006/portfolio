@@ -1,6 +1,6 @@
 .availability {
   padding: 5rem 1rem;
-  background: white;
+  background: transparent;
 }
 
 .availability-grid {
@@ -10,17 +10,18 @@
 }
 
 .availability-card {
-  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+  background: rgba(30, 39, 82, 0.6);
   padding: 2.5rem;
   border-radius: 15px;
   text-align: center;
   transition: all 0.3s ease;
   border-left: 4px solid #667eea;
+  backdrop-filter: blur(10px);
 }
 
 .availability-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
 }
 
 .availability-card.highlight {
@@ -39,7 +40,7 @@
 .availability-card h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: #ffffff;
 }
 
 .availability-card.highlight h3 {
@@ -47,7 +48,7 @@
 }
 
 .availability-card p {
-  color: #666;
+  color: #b0b0b0;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }

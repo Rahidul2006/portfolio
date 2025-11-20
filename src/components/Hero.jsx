@@ -13,15 +13,15 @@ export default function Hero() {
           </div>
           <p className="tagline">Full Stack Developer | Web Designer | App Developer</p>
           <div className="social-links">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">in</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">📷</a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon">⭐</a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="social-icon">▶</a>
-          </div>
+            <a href="https://www.linkedin.com/in/rahidul-khan-6a3922269" target="_blank" rel="noopener noreferrer" className="social-icon"><img className='icon' src="src/assets/linkedin-svgrepo-com.svg" alt="" /></a>
+            <a href="https://www.instagram.com/epic._.soul._.196/" target="_blank" rel="noopener noreferrer" className="social-icon"><img className='icon' src="src/assets/instagram-alt-svgrepo-com.svg" alt="" /></a>
+            <a href="https://github.com/Rahidul2006" target="_blank" rel="noopener noreferrer" className="social-icon"><img className='icon' src="src/assets/github-svgrepo-com.svg" alt="" /></a>
+            <a href="mailto:krahidul869@gmail.com" target="_blank" rel="noopener noreferrer" className="social-icon"><img className='icon' src="src/assets/email-contact-ui-web-svgrepo-com.svg" alt="" /></a>
+              </div>
         </div>
         <div className="hero-image">
           <div className="profile-placeholder">
-            <span>👨‍💻</span>
+            <span><img src="src/assets/photo.jpg" alt="Profile Photo" className='Profile-img' /></span>
           </div>
         </div>
       </div>

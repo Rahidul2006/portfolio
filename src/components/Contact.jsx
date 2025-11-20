@@ -37,15 +37,15 @@ export default function Contact() {
             <div className="contact-details">
               <div className="detail-item">
                 <span className="detail-label">Email:</span>
-                <a href="mailto:rahidul@example.com">rahidul@example.com</a>
+                <a href="mailto:krahidul869@gmail.com">krahidul869@gmail.com</a>
               </div>
               <div className="detail-item">
                 <span className="detail-label">LinkedIn:</span>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/rahidul</a>
+                <a href="https://linkedin.com/in/rahidul-khan-6a3922269" target="_blank" rel="noopener noreferrer">linkedin.com/in/rahidul-khan-6a3922269</a>
               </div>
               <div className="detail-item">
                 <span className="detail-label">GitHub:</span>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/rahidul</a>
+                <a href="https://github.com/Rahidul2006" target="_blank" rel="noopener noreferrer">github.com/Rahidul2006</a>
               </div>
             </div>
 

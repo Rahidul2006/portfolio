@@ -1,6 +1,6 @@
 .projects {
   padding: 5rem 1rem;
-  background: #f8f9fa;
+  background: transparent;
 }
 
 .projects-stats {
@@ -12,10 +12,11 @@
 }
 
 .stat {
-  background: white;
+  background: rgba(30, 39, 82, 0.6);
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 .stat-number {
@@ -27,7 +28,7 @@
 
 .stat-text {
   font-size: 1.1rem;
-  color: #666;
+  color: #b0b0b0;
 }
 
 .projects-grid {
