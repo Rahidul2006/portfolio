@@ -21,7 +21,7 @@ export default function Hero() {
         </div>
         <div className="hero-image">
           <div className="profile-placeholder">
-            <span><img src="src/assets/photo.jpg" alt="Profile Photo" className='Profile-img' /></span>
+            <span><img src="src/assets/photo.png" alt="Profile Photo" className='Profile-img' /></span>
           </div>
         </div>
       </div>
