@@ -1,5 +1,18 @@
 import React, { useState } from 'react';
 import './About.css';
+import reactIcon from '../assets/skils-svg/react-svgrepo-com.svg';
+import nodeIcon from '../assets/skils-svg/node-js-svgrepo-com.svg';
+import mongoIcon from '../assets/skils-svg/mongo-svgrepo-com.svg';
+import gitIcon from '../assets/skils-svg/git-svgrepo-com.svg';
+import dockerIcon from '../assets/skils-svg/docker-svgrepo-com.svg';
+import jsIcon from '../assets/skils-svg/js-svgrepo-com.svg';
+import pythonIcon from '../assets/skils-svg/python-svgrepo-com.svg';
+import htmlIcon from '../assets/skils-svg/html-5-svgrepo-com.svg';
+import cssIcon from '../assets/skils-svg/css-3-svgrepo-com.svg';
+import tailwindIcon from '../assets/skils-svg/tailwindcss-icon-svgrepo-com.svg';
+import mysqlIcon from '../assets/skils-svg/mysql-logo-svgrepo-com.svg';
+import expressIcon from '../assets/skils-svg/expressjs.svg';
+import typeScriptIcon from '../assets/skils-svg/typescript-logo-svgrepo-com.svg';
 
 export default function About() {
   const [activeTab, setActiveTab] = useState('biography');
@@ -8,36 +21,55 @@ export default function About() {
     name: 'Rahidul',
     email: 'krahidul869@gmail.com',
     role: 'Full Stack Developer',
+    linkedin: 'https://linkedin.com/in/rahidul-khan-6a3922269',
     bio: 'Passionate and Innovative Developer Committed to Driving Positive Societal Impact Through Creativity. Proven Track Record of Effective Problem Solving, Hard Work, and Originality. Enthusiastic about Delivering Meaningful Contributions and Inspiring Others.'
   };
 
   const skills = [
-    { category: 'Frontend', items: ['React', 'TypeScript', 'CSS3', 'Vite', 'Tailwind'] },
-    { category: 'Backend', items: ['Node.js', 'Python', 'Django', 'C#', '.NET'] },
-    { category: 'Mobile', items: ['React Native', 'iOS', 'Android'] },
-    { category: 'Tools', items: ['Git', 'Docker', 'AWS', 'MongoDB', 'PostgreSQL'] }
+    { category: 'Frontend', items: [
+      { name: 'React', icon: reactIcon },
+      { name: 'TypeScript', icon: typeScriptIcon },
+      { name: 'HTML', icon: htmlIcon },
+      { name: 'CSS3', icon: cssIcon },
+      { name: 'JavaScript', icon: jsIcon },
+      { name: 'Tailwind', icon: tailwindIcon }
+    ]},
+    { category: 'Backend', items: [
+      { name: 'Node.js', icon: nodeIcon },
+      { name: 'Python', icon: pythonIcon },
+      { name: 'Express.js', icon: expressIcon }
+    ]},
+    { category: 'Tools', items: [
+      { name: 'Git', icon: gitIcon },
+      { name: 'Docker', icon: dockerIcon },
+      { name: 'MongoDB', icon: mongoIcon },
+      { name: 'MySQL', icon: mysqlIcon }
+    ]}
   ];
 
-//   const experience = [
-//     {
-//       role: 'Senior Developer',
-//       company: 'Tech Company Inc.',
-//       period: '2023 - Present',
-//       description: 'Led development of scalable web applications and mentored junior developers.'
-//     },
-//     {
-//       role: 'Full Stack Developer',
-//       company: 'Digital Solutions Ltd',
-//       period: '2022 - 2023',
-//       description: 'Built and maintained multiple full-stack applications using modern technologies.'
-//     },
-//     {
-//       role: 'Junior Developer',
-//       company: 'StartUp Hub',
-//       period: '2021 - 2022',
-//       description: 'Contributed to frontend and backend development of web applications.'
-//     }
-//   ];
+  const frontendSkills = ['React', 'TypeScript','HTML', 'CSS3','JavaScript', 'Tailwind'];
+
+
+  const experience = [
+    {
+      role: 'Senior Developer',
+      company: 'Tech Company Inc.',
+      period: '2023 - Present',
+      description: 'Led development of scalable web applications and mentored junior developers.'
+    },
+    {
+      role: 'Full Stack Developer',
+      company: 'Digital Solutions Ltd',
+      period: '2022 - 2023',
+      description: 'Built and maintained multiple full-stack applications using modern technologies.'
+    },
+    {
+      role: 'Junior Developer',
+      company: 'StartUp Hub',
+      period: '2021 - 2022',
+      description: 'Contributed to frontend and backend development of web applications.'
+    }
+  ];
 
   return (
     <section id="about" className="about">
@@ -48,11 +80,10 @@ export default function About() {
         <div className="about-wrapper">
           <div className="about-profile">
             <div className="profile-image">
-              <div className="image-placeholder">👨‍💼</div>
+              <div className="image-placeholder"><img src="src/assets/formal.png" alt="Photo" /></div>
             </div>
             <h3>{biography.name}</h3>
             <p className="role">{biography.role}</p>
-            <p className="company">@ {biography.company}</p>
           </div>
 
           <div className="about-content">
@@ -84,6 +115,7 @@ export default function About() {
                   <div className="contact-info">
                     <p><strong>Name:</strong> {biography.name}</p>
                     <p><strong>Email:</strong> {biography.email}</p>
+                    <p><strong>LinkedIn:</strong> {biography.linkedin}</p>
                   </div>
                 </div>
               )}
@@ -95,7 +127,13 @@ export default function About() {
                       <h4>{skillGroup.category}</h4>
                       <div className="skill-tags">
                         {skillGroup.items.map((skill, i) => (
-                          <span key={i} className="skill-tag">{skill}</span>
+                          <div key={i} className="skill-tag-item">
+                            {skill.icon ? (
+                              <img src={skill.icon} alt={skill.name} className="skill-icon" title={skill.name} />
+                            ) : (
+                              <span className="skill-name-text">{skill.name}</span>
+                            )}
+                          </div>
                         ))}
                       </div>
                     </div>
