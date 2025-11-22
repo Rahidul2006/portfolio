@@ -5,7 +5,8 @@
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: auto auto auto auto;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   gap: 2rem;
   margin-bottom: 4rem;
 }
@@ -37,6 +38,10 @@
 
 .category-icon {
   font-size: 2rem;
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(100%);
 }
 
 .category-header h3 {
