@@ -19,11 +19,41 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState('');
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Message sent! I\'ll get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setLoading(true);
+    setStatus('');
+
+    try {
+      const response = await fetch('http://localhost:4000/api/feedback', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus('success');
+        alert('Message sent! I\'ll get back to you soon.');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setStatus('error');
+        alert('Failed to send message. Please try again.');
+        console.error('Error:', data.errors || data.error);
+      }
+    } catch (error) {
+      setStatus('error');
+      console.error('Error:', error);
+      alert('Connection error. Make sure the server is running on port 4000.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -101,7 +131,9 @@ export default function Contact() {
                 required
               ></textarea>
             </div>
-            <button type="submit" className="submit-btn">Send Message</button>
+            <button type="submit" className="submit-btn" disabled={loading}>
+              {loading ? 'Sending...' : 'Send Message'}
+            </button>
           </form>
         </div>
       </div>
