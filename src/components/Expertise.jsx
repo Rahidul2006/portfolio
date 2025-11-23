@@ -6,21 +6,16 @@ export default function Expertise() {
     {
       id: 1,
       title: 'Full Stack Web Development',
-      description: 'I\'m a full-stack developer skilled in TypeScript, Node.js, React, Django, Python, C# and .NET. I can handle both front-end and back-end development, building user-friendly interfaces as well as strong server-side systems and databases.',
+      description: 'I\'m a full-stack developer skilled in TypeScript, Node.js,Tailwind CSS, React,HTML,CSS,JavaScript, Python. I can handle both front-end and back-end development, building user-friendly interfaces as well as strong server-side systems and databases.',
       icon: '⚡'
     },
-    {
-      id: 2,
-      title: 'App Development',
-      description: 'In the past few months, I have been actively developing beginner to intermediate level mobile applications using React Native. My portfolio showcases a range of projects that demonstrate my proficiency in creating cross-platform mobile apps.',
-      icon: '📱'
-    },
-    {
-      id: 3,
-      title: 'Automation With TestComplete',
-      description: 'I\'m also experienced in automation using TestComplete. I\'ve worked on creating reliable and reusable test scripts to improve testing efficiency. My skills help in automating complex scenarios, reducing manual effort.',
-      icon: '🤖'
-    }
+    // {
+    //   id: 2,
+    //   title: 'App Development',
+    //   description: 'In the past few months, I have been actively developing beginner to intermediate level mobile applications using React Native. My portfolio showcases a range of projects that demonstrate my proficiency in creating cross-platform mobile apps.',
+    //   icon: '📱'
+    // },
+
   ];
 
   return (

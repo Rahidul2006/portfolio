@@ -72,6 +72,12 @@
   transition: all 0.3s ease;
 }
 
+.social-icons a img {
+      width: 40px;
+  height: 40px;
+   border-radius: 50%;
+}
+
 .social-icons a:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);

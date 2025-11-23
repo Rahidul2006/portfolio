@@ -1,73 +1,64 @@
 import React from 'react';
 import './Skills.css';
+import reactIcon from '../assets/skils-svg/react-svgrepo-com.svg';
+import nodeIcon from '../assets/skils-svg/node-js-svgrepo-com.svg';
+import mongoIcon from '../assets/skils-svg/mongo-svgrepo-com.svg';
+import gitIcon from '../assets/skils-svg/git-svgrepo-com.svg';
+import dockerIcon from '../assets/skils-svg/docker-svgrepo-com.svg';
+import jsIcon from '../assets/skils-svg/js-svgrepo-com.svg';
+import pythonIcon from '../assets/skils-svg/python-svgrepo-com.svg';
+import htmlIcon from '../assets/skils-svg/html-5-svgrepo-com.svg';
+import cssIcon from '../assets/skils-svg/css-3-svgrepo-com.svg';
+import tailwindIcon from '../assets/skils-svg/tailwindcss-icon-svgrepo-com.svg';
+import mysqlIcon from '../assets/skils-svg/mysql-logo-svgrepo-com.svg';
+import expressIcon from '../assets/skils-svg/expressjs.svg';
+import typeScriptIcon from '../assets/skils-svg/typescript-logo-svgrepo-com.svg';
+import linuxIcon from '../assets/skils-svg/linux-svgrepo-com.svg';
+import firebaseIcon from '../assets/skils-svg/firebase-svgrepo-com.svg';
 
 export default function Skills() {
   const skillCategories = [
     {
       title: 'Frontend',
-      icon: '🎨',
+      
       skills: [
-        { name: 'React', level: 95 },
-        { name: 'TypeScript', level: 90 },
-        { name: 'CSS3', level: 95 },
-        { name: 'Vite', level: 85 },
-        { name: 'Tailwind CSS', level: 90 },
-        { name: 'JavaScript', level: 95 }
+        { name: 'React', level: 95, icon: reactIcon },
+        { name: 'TypeScript', level: 90, icon: typeScriptIcon },
+        { name: 'CSS3', level: 95, icon: cssIcon },
+        { name: 'HTML5', level: 95, icon: htmlIcon },
+        { name: 'Tailwind CSS', level: 90, icon: tailwindIcon },
+        { name: 'JavaScript', level: 95, icon: jsIcon }
       ]
     },
     {
       title: 'Backend',
-      icon: '⚙️',
+    
       skills: [
-        { name: 'Node.js', level: 90 },
-        { name: 'Python', level: 85 },
-        { name: 'Django', level: 80 },
-        { name: 'C#', level: 75 },
-        { name: '.NET', level: 75 },
-        { name: 'Express.js', level: 85 }
+        { name: 'Node.js', level: 90, icon: nodeIcon },
+        { name: 'Python', level: 85, icon: pythonIcon },
+        { name: 'Express.js', level: 85, icon: expressIcon }
       ]
     },
-    {
-      title: 'Mobile',
-      icon: '📱',
-      skills: [
-        { name: 'React Native', level: 85 },
-        { name: 'iOS', level: 70 },
-        { name: 'Android', level: 70 },
-        { name: 'Flutter', level: 60 }
-      ]
-    },
+
     {
       title: 'Databases',
-      icon: '🗄️',
+    
       skills: [
-        { name: 'MongoDB', level: 88 },
-        { name: 'PostgreSQL', level: 90 },
-        { name: 'MySQL', level: 85 },
-        { name: 'Firebase', level: 80 }
+        { name: 'MongoDB', level: 88, icon: mongoIcon },
+        { name: 'MySQL', level: 85, icon: mysqlIcon },
+        { name: 'Firebase', level: 80, icon: firebaseIcon }
       ]
     },
     {
       title: 'Tools & DevOps',
-      icon: '🛠️',
+    
       skills: [
-        { name: 'Git', level: 95 },
-        { name: 'Docker', level: 80 },
-        { name: 'AWS', level: 75 },
-        { name: 'CI/CD', level: 80 },
-        { name: 'Linux', level: 85 }
+        { name: 'Git', level: 95, icon: gitIcon },
+        { name: 'Docker', level: 80, icon: dockerIcon },
+        { name: 'Linux', level: 85, icon: linuxIcon }
       ]
     },
-    {
-      title: 'Testing',
-      icon: '✅',
-      skills: [
-        { name: 'Jest', level: 85 },
-        { name: 'Pytest', level: 80 },
-        { name: 'TestComplete', level: 90 },
-        { name: 'Selenium', level: 75 }
-      ]
-    }
+    
   ];
 
   return (
@@ -80,7 +71,7 @@ export default function Skills() {
           {skillCategories.map((category, idx) => (
             <div key={idx} className="skill-category">
               <div className="category-header">
-                <span className="category-icon">{category.icon}</span>
+                
                 <h3>{category.title}</h3>
               </div>
               
@@ -88,7 +79,7 @@ export default function Skills() {
                 {category.skills.map((skill, i) => (
                   <div key={i} className="skill-item">
                     <div className="skill-header">
-                      <span className="skill-name">{skill.name}</span>
+                      <span className="skill-name"><img src={skill.icon} alt={skill.name} className="skill-icon" /></span>
                       <span className="skill-percentage">{skill.level}%</span>
                     </div>
                     <div className="skill-bar">
@@ -104,24 +95,7 @@ export default function Skills() {
           ))}
         </div>
 
-        <div className="skills-summary">
-          <div className="summary-card">
-            <div className="summary-number">15+</div>
-            <div className="summary-text">Programming Languages</div>
-          </div>
-          <div className="summary-card">
-            <div className="summary-number">20+</div>
-            <div className="summary-text">Tools & Technologies</div>
-          </div>
-          <div className="summary-card">
-            <div className="summary-number">10+</div>
-            <div className="summary-text">Years Experience</div>
-          </div>
-          <div className="summary-card">
-            <div className="summary-number">6</div>
-            <div className="summary-text">Skill Categories</div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

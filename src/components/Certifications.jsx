@@ -19,30 +19,7 @@ export default function Certifications() {
       date: '2022',
       link: 'https://example.com/cert2'
     },
-    {
-      id: 3,
-      title: 'Presentario Online Hackathon - SIT IdEEaS 2022',
-      issuer: 'SIT Tumkur',
-      description: 'Finalist Position for presenting a research-oriented project on Modified AES Algorithm with computational improvements.',
-      date: '2022',
-      link: 'https://example.com/cert3'
-    },
-    {
-      id: 4,
-      title: 'Hackerrank Problem Solving Skill Certification',
-      issuer: 'Hackerrank',
-      description: 'Earned certification demonstrating proficiency in algorithmic problem solving and coding skills.',
-      date: '2023',
-      link: 'https://example.com/cert4'
-    },
-    {
-      id: 5,
-      title: 'Hackerrank JavaScript Skill Certification',
-      issuer: 'Hackerrank',
-      description: 'Certified JavaScript developer validating expertise in JavaScript programming and best practices.',
-      date: '2023',
-      link: 'https://example.com/cert5'
-    }
+
   ];
 
   return (

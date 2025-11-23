@@ -1,14 +1,12 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Expertise from './components/Expertise'
-import Milestones from './components/Milestones(pending)'
 import Projects from './components/Projects'
 import About from './components/About'
 import Skills from './components/Skills'
 import Certifications from './components/Certifications'
 import Availability from './components/Availability'
 import Contact from './components/Contact'
-import Footer from './components/Footer'
 import './App.css'
 
 export default function App() {
@@ -17,14 +15,12 @@ export default function App() {
       <Header />
       <Hero />
       <Expertise />
-      {/* <Milestones /> */}
       <Projects />
       <About />
       <Skills />
       <Certifications />
       <Availability />
       <Contact />
-      <Footer />
     </>
   )
 }
