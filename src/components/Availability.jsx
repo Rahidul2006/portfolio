@@ -1,6 +1,6 @@
 import React from 'react';
 import './Availability.css';
-
+import resumePDF from '../assets/Rahidul Khan Updated resume.pdf';
 export default function Availability() {
   return (
     <section className="availability">
@@ -12,7 +12,7 @@ export default function Availability() {
             <div className="availability-icon">💼</div>
             <h3>Part Time Contribution</h3>
             <p>Available for consulting and part-time projects to help companies innovate.</p>
-            <a href="src/assets/Rahidul Khan Updated resume.pdf" className="hire-btn" target="_blank" rel="noopener noreferrer">View Resume</a>
+            <a href={resumePDF} className="hire-btn" target="_blank" rel="noopener noreferrer">View Resume</a>
           </div>
           
           <div className="availability-card highlight">
