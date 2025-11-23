@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
+import profilePhoto from '../assets/photo.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ export default function Header() {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo">
-          <img src="src/assets/photo.png" alt="Rahidul Khan" className='logoimg' />
+          <img src={profilePhoto} alt="Rahidul Khan" className='logoimg' />
           <a href="#home">Rahidul Khan</a>
         </div>
         <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
