@@ -1,16 +1,16 @@
 import React from 'react';
 import './Projects.css';
-
+import demoImage from '../assets/demo.png';
 export default function Projects() {
   const projects = [
-    { id: 1, img:"src/assets/demo.png", link:"https://github.com/Rahidul2006", title: 'Resume Builder App', description: 'Full-stack resume builder with React and Node.js' },
-    { id: 2, img:"src/assets/demo.png", link:"https://github.com/Rahidul2006", title: 'Social Media App', description: 'Real-time social platform with WebSockets' },
-    { id: 3, img:"src/assets/demo.png", link:"https://github.com/Rahidul2006", title: 'Task Management System', description: 'Collaborative task management tool' },
-    { id: 4, img:"src/assets/demo.png", link:"https://github.com/Rahidul2006", title: 'AI Chat Bot', description: 'Conversational AI using machine learning' },
-    { id: 5, img:"src/assets/demo.png", link:"https://github.com/Rahidul2006", title: 'Analytics Dashboard', description: 'Real-time data visualization dashboard' },
-    { id: 6, img:"src/assets/demo.png", link:"https://github.com/Rahidul2006", title: 'Mobile Weather App', description: 'Weather app with React Native' },
-    { id: 7, img:"src/assets/demo.png", link:"https://github.com/Rahidul2006", title: 'CRM System', description: 'Customer relationship management platform' },
-    { id: 8, img:"src/assets/demo.png", link:"https://github.com/Rahidul2006", title: 'Video Streaming Service', description: 'Scalable video streaming platform' },
+    { id: 1, img: demoImage, link:"https://github.com/Rahidul2006", title: 'Resume Builder App', description: 'Full-stack resume builder with React and Node.js' },
+    { id: 2, img: demoImage, link:"https://github.com/Rahidul2006", title: 'Social Media App', description: 'Real-time social platform with WebSockets' },
+    { id: 3, img: demoImage, link:"https://github.com/Rahidul2006", title: 'Task Management System', description: 'Collaborative task management tool' },
+    { id: 4, img: demoImage, link:"https://github.com/Rahidul2006", title: 'AI Chat Bot', description: 'Conversational AI using machine learning' },
+    { id: 5, img: demoImage, link:"https://github.com/Rahidul2006", title: 'Analytics Dashboard', description: 'Real-time data visualization dashboard' },
+    { id: 6, img: demoImage, link:"https://github.com/Rahidul2006", title: 'Mobile Weather App', description: 'Weather app with React Native' },
+    { id: 7, img: demoImage, link:"https://github.com/Rahidul2006", title: 'CRM System', description: 'Customer relationship management platform' },
+    { id: 8, img: demoImage, link:"https://github.com/Rahidul2006", title: 'Video Streaming Service', description: 'Scalable video streaming platform' },
       ];
 
   return (

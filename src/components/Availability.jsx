@@ -1,6 +1,7 @@
 import React from 'react';
 import './Availability.css';
 import resumePDF from '../assets/Rahidul Khan Updated resume.pdf';
+
 export default function Availability() {
   return (
     <section className="availability">
