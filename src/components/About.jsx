@@ -13,6 +13,9 @@ import tailwindIcon from '../assets/skils-svg/tailwindcss-icon-svgrepo-com.svg';
 import mysqlIcon from '../assets/skils-svg/mysql-logo-svgrepo-com.svg';
 import expressIcon from '../assets/skils-svg/expressjs.svg';
 import typeScriptIcon from '../assets/skils-svg/typescript-logo-svgrepo-com.svg';
+import linuxIcon from '../assets/skils-svg/linux-svgrepo-com.svg';
+import firebaseIcon from '../assets/skils-svg/firebase-svgrepo-com.svg';
+import profilePhoto from '../assets/formal.png';
 
 export default function About() {
   const [activeTab, setActiveTab] = useState('biography');
@@ -39,11 +42,15 @@ export default function About() {
       { name: 'Python', icon: pythonIcon },
       { name: 'Express.js', icon: expressIcon }
     ]},
+    { category: 'Database', items: [
+      { name: 'MongoDB', icon: mongoIcon },
+      { name: 'MySQL', icon: mysqlIcon },
+      { name: 'Firebase', icon: firebaseIcon },
+    ]},
     { category: 'Tools', items: [
       { name: 'Git', icon: gitIcon },
       { name: 'Docker', icon: dockerIcon },
-      { name: 'MongoDB', icon: mongoIcon },
-      { name: 'MySQL', icon: mysqlIcon }
+      { name:'linux', icon: linuxIcon}
     ]}
   ];
 
@@ -80,7 +87,7 @@ export default function About() {
         <div className="about-wrapper">
           <div className="about-profile">
             <div className="profile-image">
-              <div className="image-placeholder"><img src="src/assets/formal.png" alt="Photo" /></div>
+              <div className="image-placeholder"><img src={profilePhoto} alt="Photo" /></div>
             </div>
             <h3>{biography.name}</h3>
             <p className="role">{biography.role}</p>
